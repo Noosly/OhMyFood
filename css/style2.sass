@@ -163,10 +163,7 @@ header
     justify-content: center   
     padding-bottom: 40px 
     flex-direction: row
-    @include row-direction-desktop($mobile-desktop-breakpoint)
-    
-        
-    
+    @include row-direction-desktop($mobile-desktop-breakpoint)    
     &__div
         display: flex
         flex-direction: row
@@ -306,15 +303,7 @@ header
             display: none
             background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA))
             color: transparent
-            background-clip: text
-            
-            
-            
-            
-            
-        
-                
-               
+            background-clip: text  
         &:hover
             .coeur_vide
                 display: none
@@ -335,24 +324,19 @@ footer
     color: white
     align-items: center
     padding: 10px
-    @include customized-font('Roboto', normal, 500, 16px)
-    
+    @include customized-font('Roboto', normal, 500, 16px)    
     line-height: 19px
     @include footer-desktop($mobile-desktop-breakpoint) 
-
-    
     h1
         @include customized-font('Shrikhand', 0, 0, 25px)    
         margin-left: 40px 
     ul
         list-style-type: none  
         @include row-direction-desktop($mobile-desktop-breakpoint)
-
     li 
         padding: 5px
     i
-        width: 30px
-    
+        width: 30px    
     a
         text-decoration: none
         color: white
@@ -368,16 +352,12 @@ footer
     position: relative
     @include fill-height-desktop($mobile-desktop-breakpoint, 383px)
     
-    
-    
-    
 
 
 
 .menu
     z-index: 5
-    position: relative
-    
+    position: relative    
     margin: auto  
     margin-top: -40px
     background-color: var(--light-grey)
@@ -433,10 +413,7 @@ $elipse-max-width: 80%
     border-radius: 15px           
     margin: 20px  
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1)
-
     &:hover
-        
-
         .choix__commande
             animation: fade-in 1s forwards
             display: inline-block
@@ -449,16 +426,12 @@ $elipse-max-width: 80%
             border-bottom-right-radius: 15px        
             .fa-circle-check
                 color: white
-                @include customized-font(0, 0, 0, 20px)
-
-    
-    
+                @include customized-font(0, 0, 0, 20px)    
     &__txt
         margin-right :auto 
         position: absolute
         left: 25px  
-        width: $elipse-max-width
-        
+        width: $elipse-max-width        
         h2
             @include customized-font('Roboto', normal, 500, 18px)
             line-height: 21px
@@ -470,10 +443,8 @@ $elipse-max-width: 80%
             line-height: 18px
             padding-left: 10px
             margin-top: 2px
-            padding-top: 2px
-            
-            @include three-points($elipse-max-width)
-            
+            padding-top: 2px            
+            @include three-points($elipse-max-width)            
     
     &__tarif
         padding-top:  40px
