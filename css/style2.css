@@ -414,6 +414,15 @@ footer a {
     opacity: 1;
   }
 }
+@keyframes fadeIn {
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: true;
+    display: inline-block;
+  }
+}
 .choix {
   padding-left: 10px;
   display: flex;
@@ -494,6 +503,21 @@ footer a {
 .choix__commande .fa-circle-check {
   color: white;
   font-size: 20px;
+}
+
+.choix-entrees {
+  visibility: hidden;
+  animation: show-content 0s linear 1s forwards;
+}
+
+.choix-plats {
+  visibility: hidden;
+  animation: show-content 0s linear 2s forwards;
+}
+
+.choix-desserts {
+  visibility: hidden;
+  animation: show-content 0s linear 3s forwards;
 }
 
 @keyframes briller {

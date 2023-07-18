@@ -401,6 +401,16 @@ footer
   100%
     opacity: 1
 
+@keyframes fadeIn
+    50% 
+        visibility: hidden
+
+    100%
+        visibility: true
+        display: inline-block
+
+
+
 $elipse-max-width: 80%
 .choix
     padding-left: 10px
@@ -412,7 +422,8 @@ $elipse-max-width: 80%
     margin-right: 5%        
     border-radius: 15px           
     margin: 20px  
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1)
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1)    
+    
     &:hover
         .choix__commande
             animation: fade-in 1s forwards
@@ -468,8 +479,17 @@ $elipse-max-width: 80%
             color: white
             font-size: 20px
 
+.choix-entrees
+    visibility: hidden
+    animation: show-content 0s linear 1s forwards
 
+.choix-plats
+    visibility: hidden
+    animation: show-content 0s linear 2s forwards
 
+.choix-desserts
+    visibility: hidden
+    animation: show-content 0s linear 3s forwards
 
 @keyframes briller
     0% 
