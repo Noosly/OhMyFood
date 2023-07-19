@@ -217,7 +217,7 @@ header a {
 }
 @media screen and (min-width: 679px) {
   .restaurants-cards__card img {
-    aspect-ratio: 2.5;
+    aspect-ratio: 5/2;
   }
 }
 .restaurants-cards__card span {
